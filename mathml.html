@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Oblig 2</title>
+		<link href="stil.css" rel="stylesheet" />
+		<link href="normalize.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Lora%7COpen+Sans+Condensed:300" rel="stylesheet">
+		<script src="https://use.fontawesome.com/711fc95f14.js"></script>
+		<script type="text/javascript" async
+	  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_CHTML"></script>
+	</head>
+	<body>
+		<div id="master-grid">
+			<header>
+				<h1>Webutvikling</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
+					<li>Artikler
+						<ul>
+							<li><a href="mathml.html">MathML</a></li>
+							<li><a href="svg.html">SVG</a></li>
+							<li><a href="gitgithub.html">Git og GitHub</a></li>
+						</ul>
+					</li>
+					<li><a href="linkearkiv.html">Linkearkiv</a></li>
+				</ul>
+			</nav>
+			<main>
+				<article>
+					<h2>MathML</h2>
+					<p>MathML er et markup language for matematikk. Ved å bruke MathML blir de matematiske formelene skrevet på en strukturert måte, og maskinen vil kunne lese formelen.  Det er en måte å visualisere mattestykker i stedet for å legge inn et bilde. Det finnes to typer MathML som er content og presentation. Content er hvordan den matematiske formelen er bygd opp, og hvordan man leser den. Presentation er hvordan formelen skal vises.</p>
+					<p>HTML har ingen tagger for å markere matematiske formler, men med MathML vil man kunne vise formler i HTMLkoden i stedet for å legge inn et bilde av formelen. MathML har en del XML tagger som brukes til å markere formelen
+					<h3>Eksempel 1</h3>
+
+					<math>
+						<semantics>
+							<!-- Presentation MathML -->
+							<mrow>
+								<mi>x</mi>
+								<mo>=</mo>
+								<mi>y</mi>
+								<msup>
+									<mi>x</mi>
+									<mn>2</mn>
+								</msup>
+							</mrow>
+							
+							<!-- Content MathML -->
+							<annotation-xml encoding="MathML-Content">
+								<apply>
+									<eq />
+									<ci>x</ci>
+									<apply>
+										<times/>
+										<ci>y</ci>
+										<apply>
+											<power/>
+											<ci>x</ci>
+											<cn>2</cn>
+										</apply>
+									</apply>
+								</apply>
+							</annotation-xml>
+						</semantics>
+					</math>
+					<br />
+					<h3>Eksempel 2</h3>
+					<math>
+						<semantics>
+						<!-- Presentation MathML -->
+						    <mrow>
+								<msup>
+									<mi>x</mi>
+									<mn>2</mn>
+								</msup>
+								<mo>+</mo>
+								<mi>y</mi>
+							</mrow>
+
+					<!-- Content MathML -->
+					    <annotation-xml encoding="MathML-Content">
+					      <apply>
+					        <plus/>
+					        <apply>
+					          <power/>
+					          <ci>x</ci>
+					          <cn>2</cn>
+					        </apply>
+					        <ci>y</ci>
+					      </apply>
+					    </annotation-xml>
+					  </semantics>
+					</math>
+					<br />
+					<h3>Eksempel 3</h3>
+
+				</article>
+			</main>
+			<footer>
+				<a href="omdennesiden.html">Om denne siden</a>
+			</footer>
+		</div>
+	</body>
+</html>

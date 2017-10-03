@@ -1,0 +1,253 @@
+#master-grid {
+	max-width: 1000px;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 200px auto auto 100px;
+	grid-template-areas:	"header header header"
+							"nav nav nav"
+							"main main main"
+							"footer footer footer";
+}
+
+#main-grid {
+	max-width: 1000px;
+	margin: 0;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto;
+	grid-template-areas:	"artikkel1 artikkel1 infoboks"
+							"artikkel2 artikkel2 infoboks"
+							"artikkel3 artikkel3 infoboks";
+}
+
+/*ALT*/
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #1a1a1a;
+}
+
+p {
+	font-family: 'Lora', serif;
+	font-size: 17px;
+}
+
+.knapp {
+	border: 1px solid black;
+	padding: 10px 15px;
+	margin: 20px;
+	float:right;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+}
+.knapp:link{
+	color: black;
+}
+.knapp:hover{
+	color: white;
+	background-color: #1a1a1a;
+}
+.knapp:visited{
+	color: gray;
+}
+
+/*tabeller*/
+table{
+	font-family: 'Lora', serif;
+}
+td, th {
+	border: 1px solid #1a1a1a;
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(even){
+	background-color: #d9d9d9;
+}
+
+tr:nth-child(odd){
+	background-color: #b3d1ff;
+}
+
+/*HEADER*/
+header {
+	grid-area: header;
+	background-color: #d9d9d9;
+}
+header h1{
+	font-size: 80px;
+	padding: 30px 20px;
+	color: #1a1a1a;
+	text-align: center;
+}
+
+/*NAVIGASJON*/
+nav {
+	grid-area: nav;
+	background-color: #1a1a1a;
+}
+
+nav a:link{
+	color: #d9d9d9;
+}
+nav a:hover{
+	color: white;
+}
+
+nav ul{
+	list-style: none;
+	padding: 5px;
+	font-size: 22px;
+	text-decoration: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #d9d9d9;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+nav ul li a{
+	font-size: 22px;
+	text-decoration: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #d9d9d9;
+}
+
+/*NAVIGASJON - dropdown meny*/
+nav ul li ul{
+	display: none;
+	position: absolute;	
+}
+
+nav ul li:hover ul{
+	display: block;
+	background-color: #1a1a1a;
+}
+
+nav ul li ul li{
+	display: block;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+nav ul li ul li a{
+	font-size: 22px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+
+}
+
+/*MAIN*/
+main {
+	grid-area: main;
+}
+
+/*linker i main*/
+main a:link{
+	color: #1a1a1a;
+}
+main a:hover{
+	color: gray;
+}
+main a:visited{
+	color: gray;
+}
+
+
+/*ARTICLE*/
+article h2{
+	font-size: 35px;
+}
+
+article h3{
+	font-size: 25px;
+}
+article a{
+	font-family: 'Lora', serif;
+	font-size: 17px;
+}
+
+/*ARTIKKEL 1*/
+#artikkel1{
+	grid-area: artikkel1;
+	padding: 10px;
+}
+#artikkel1 img{
+	float: left;
+	padding: 10px;
+}
+#artikkel1 h2{
+	font-size: 35px;
+}
+
+/*ARTIKKEL 2*/
+#artikkel2{
+	grid-area: artikkel2;
+	padding: 10px;
+}
+#artikkel2 img{
+	float: left;
+	padding: 10px;
+}
+#artikkel2 h2{
+	font-size: 30px;
+}
+
+/*ARTIKKEL 3*/
+#artikkel3{
+	grid-area: artikkel3;
+	padding: 10px;
+}
+#artikkel3 h2{
+	font-size: 30px;
+}
+
+/*INFORMASJONSBOKS*/
+#infoboks{
+	grid-area: infoboks;
+	padding: 10px;
+	background-color: #d9d9d9;
+	color: #1a1a1a;
+	text-align: center;
+}
+#infoboks img{
+	padding: 10px;
+}
+#infoboks p{
+	font-size: 14px;
+}
+#infoboks table{
+	font-size: 12px;
+}
+
+/*FOOTER*/
+footer{
+	grid-area: footer;
+	background-color: #1a1a1a;
+	padding: 30px 20px;
+	text-align: center;
+}
+
+footer a{
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	color: #d9d9d9;
+}
+footer a:link{
+	color: #d9d9d9;
+}
+footer a:hover{
+	color: white;
+}
+footer a:visited{
+	color: gray;
+}
