@@ -39,7 +39,7 @@ p {
 	border: 1px solid black;
 	padding: 10px 15px;
 	margin: 20px;
-	float:right;
+	float: right;
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 }
@@ -142,7 +142,6 @@ nav ul li ul li a{
 	font-size: 22px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
-
 }
 
 /*MAIN*/
@@ -160,6 +159,9 @@ main a:hover{
 main a:visited{
 	color: gray;
 }
+main a:active, main a:visited:active {
+background-color: #b3d1ff;
+}
 
 
 /*ARTICLE*/
@@ -174,7 +176,10 @@ article a{
 	font-family: 'Lora', serif;
 	font-size: 17px;
 }
-
+article img{
+	float: left;
+	padding: 10px;
+}
 /*ARTIKKEL 1*/
 #artikkel1{
 	grid-area: artikkel1;
@@ -204,6 +209,10 @@ article a{
 /*ARTIKKEL 3*/
 #artikkel3{
 	grid-area: artikkel3;
+	padding: 10px;
+}
+#artikkel3 img{
+	float: left;
 	padding: 10px;
 }
 #artikkel3 h2{

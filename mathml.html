@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Oblig 2</title>
-		<link href="stil.css" rel="stylesheet" />
 		<link href="normalize.css" rel="stylesheet" />
+		<link href="stil.css" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Lora%7COpen+Sans+Condensed:300" rel="stylesheet">
 		<script src="https://use.fontawesome.com/711fc95f14.js"></script>
 		<script type="text/javascript" async
@@ -18,6 +18,7 @@
 			<nav>
 				<ul>
 					<li><a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="ommeg.html">Om meg</a></li>
 					<li>Artikler
 						<ul>
 							<li><a href="mathml.html">MathML</a></li>
@@ -31,72 +32,79 @@
 			<main>
 				<article>
 					<h2>MathML</h2>
-					<p>MathML er et markup language for matematikk. Ved å bruke MathML blir de matematiske formelene skrevet på en strukturert måte, og maskinen vil kunne lese formelen.  Det er en måte å visualisere mattestykker i stedet for å legge inn et bilde. Det finnes to typer MathML som er content og presentation. Content er hvordan den matematiske formelen er bygd opp, og hvordan man leser den. Presentation er hvordan formelen skal vises.</p>
-					<p>HTML har ingen tagger for å markere matematiske formler, men med MathML vil man kunne vise formler i HTMLkoden i stedet for å legge inn et bilde av formelen. MathML har en del XML tagger som brukes til å markere formelen
+					<p>MathML er et markup language for matematikk. Ved å bruke MathML blir de matematiske formelene skrevet på en strukturert måte, og maskinen vil kunne lese formelen. Det er en måte å visualisere mattestykker i stedet for å legge inn et bilde. Det finnes to typer MathML som er content og presentation. Content er hvordan den matematiske formelen er bygd opp, og hvordan man leser den. Spesielt nyttig hvis man ønsker at maskinen skal lese opp formelen. Presentation er hvordan formelen skal vises.</p>
+					<p>HTML har ingen tagger for å markere matematiske formler, men med MathML vil man kunne vise formler i HTMLkoden i stedet for å legge inn et bilde av formelen. MathML har en del XML tagger som brukes til å markere formelen. Det er ikke alle nettlesere som støtter MathML, Firefox støtter men det gjør ikke Chrome. Så for å få det til å fungere i Chrome så kan man bruke noe som heter MathJax, og ha en script-tag i head. Videre finnes noen enkle eksempler jeg har laget selv for å vise hvordan man bruker MathML.
 					<h3>Eksempel 1</h3>
-
+					<p> 
 					<math>
-						<semantics>
-							<!-- Presentation MathML -->
-							<mrow>
+						<mrow>
+							<mi>y</mi>
+							<mo>=</mo>
+							<msup>
 								<mi>x</mi>
-								<mo>=</mo>
-								<mi>y</mi>
-								<msup>
-									<mi>x</mi>
-									<mn>2</mn>
-								</msup>
-							</mrow>
-							
-							<!-- Content MathML -->
-							<annotation-xml encoding="MathML-Content">
-								<apply>
-									<eq />
-									<ci>x</ci>
-									<apply>
-										<times/>
-										<ci>y</ci>
-										<apply>
-											<power/>
-											<ci>x</ci>
-											<cn>2</cn>
-										</apply>
-									</apply>
-								</apply>
-							</annotation-xml>
-						</semantics>
+								<mn>2</mn>
+							</msup>
+						</mrow>
 					</math>
+					 skrives slik:</p>
+					<p>
+						&lt;math&gt;<br/>
+							&lt;mrow&gt;<br/>
+								&lt;mi&gt;y&lt;/mi&gt;<br/>
+								&lt;mo&gt;=&lt;/mo&gt;<br/>
+								&lt;msup&gt;<br/>
+								&lt;mi&gt;x&lt;/mi&gt;<br/>
+								&lt;mn&gt;2&lt;/mn&gt;<br/>
+								&lt;/msup&gt;<br/>
+							&lt;/mrow&gt;<br/>
+						&lt;/math&gt;<br/>
+					</p>
+					<p>Man må alltid ha med &lt;math&gt; som er rotelementet, og ved å bruke &lt;/msup&gt; rundt x og 2 vil 2 opphøyd.</p>
 					<br />
 					<h3>Eksempel 2</h3>
+					<p>
 					<math>
-						<semantics>
-						<!-- Presentation MathML -->
-						    <mrow>
-								<msup>
-									<mi>x</mi>
-									<mn>2</mn>
-								</msup>
-								<mo>+</mo>
-								<mi>y</mi>
-							</mrow>
-
-					<!-- Content MathML -->
-					    <annotation-xml encoding="MathML-Content">
-					      <apply>
-					        <plus/>
-					        <apply>
-					          <power/>
-					          <ci>x</ci>
-					          <cn>2</cn>
-					        </apply>
-					        <ci>y</ci>
-					      </apply>
-					    </annotation-xml>
-					  </semantics>
+						<mfrac>
+							<mn>2</mn>
+							<mn>3</mn>
+						</mfrac>
 					</math>
+					skrives slik: </p>
+					<p>
+						&lt;math&gt;<br/>
+							&lt;mfrac&gt;<br/>
+								&lt;mn&gt;2&lt;/mn&gt;<br/>
+								&lt;mn&gt;3&lt;/mn&gt;<br/>
+							&lt;/mfrac&gt;<br/>
+						&lt;/math&gt;<br/>
+					</p>
+					<p>Ved å bruke &lt;mfrac&gt; vil man lage en brøk, og man kan sette hva man ønsker å ha over og under brøkstreken.</p>
 					<br />
 					<h3>Eksempel 3</h3>
-
+					<p>
+					<math>
+						<mrow>
+							<mi>6</mi>
+							<mo>+</mo>
+							<mi>3</mi>
+							<mo>-</mo>
+							<mi>8</mi>
+						</mrow>
+					</math>
+					skrives slik: </p>
+					<p>
+						&lt;math&gt;<br/>
+							&lt;mrow&gt;<br/>
+								&lt;mi&gt;x&lt;/mi&gt;<br/>
+								&lt;mo&gt;+&lt;/mo&gt;<br/>
+								&lt;mn&gt;3&lt;/mn&gt;<br/>
+								&lt;mo&gt;-&lt;/mo&gt;<br/>
+								&lt;mn&gt;8&lt;/mn&gt;<br/>
+							&lt;/mrow&gt;<br/>
+						&lt;/math&gt;<br/>
+					</p>
+					<p>I &lt;mi&gt; setter man variabler, symboler osv., &lt;mn&gt; brukes til tall, og &lt;mo&gt; brukes til de matematiske operatorene.</p>
+					<br />
 				</article>
 			</main>
 			<footer>
