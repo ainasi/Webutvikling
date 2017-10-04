@@ -1,3 +1,4 @@
+/*GRID*/
 #master-grid {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -35,6 +36,7 @@ p {
 	font-size: 17px;
 }
 
+/*KNAPP*/
 .knapp {
 	border: 1px solid black;
 	padding: 10px 15px;
@@ -54,7 +56,7 @@ p {
 	color: gray;
 }
 
-/*tabeller*/
+/*TABELLER*/
 table{
 	font-family: 'Lora', serif;
 }
@@ -88,14 +90,12 @@ nav {
 	grid-area: nav;
 	background-color: #1a1a1a;
 }
-
 nav a:link{
 	color: #d9d9d9;
 }
 nav a:hover{
 	color: white;
 }
-
 nav ul{
 	list-style: none;
 	padding: 5px;
@@ -105,13 +105,11 @@ nav ul{
 	text-transform: uppercase;
 	color: #d9d9d9;
 }
-
 nav ul li{
 	display: inline-block;
 	margin-right: 20px;
 	margin-left: 20px;
 }
-
 nav ul li a{
 	font-size: 22px;
 	text-decoration: none;
@@ -120,24 +118,21 @@ nav ul li a{
 	color: #d9d9d9;
 }
 
-/*NAVIGASJON - dropdown meny*/
+/*NAVIGASJON - DROPFOWNMENY*/
 nav ul li ul{
 	display: none;
 	position: absolute;	
 }
-
 nav ul li:hover ul{
 	display: block;
 	background-color: #1a1a1a;
 }
-
 nav ul li ul li{
 	display: block;
 	margin-left: 10px;
 	margin-right: 10px;
 	padding: 5px;
 }
-
 nav ul li ul li a{
 	font-size: 22px;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -149,7 +144,7 @@ main {
 	grid-area: main;
 }
 
-/*linker i main*/
+/*LINKER I MAIN*/
 main a:link{
 	color: #1a1a1a;
 }
@@ -180,6 +175,7 @@ article img{
 	float: left;
 	padding: 10px;
 }
+
 /*ARTIKKEL 1*/
 #artikkel1{
 	grid-area: artikkel1;
@@ -244,7 +240,6 @@ footer{
 	padding: 30px 20px;
 	text-align: center;
 }
-
 footer a{
 	font-size: 20px;
 	font-family: 'Open Sans Condensed', sans-serif;
