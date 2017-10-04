@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb">
 	<head>
 		<meta charset="UTF-8" />
 		<title>Oblig 2</title>
 		<link href="normalize.css" rel="stylesheet" />
-		<link href="stil.css" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Lora%7COpen+Sans+Condensed:300" rel="stylesheet">
+		<link href="stil.css" rel="stylesheet" />
 		<script src="https://use.fontawesome.com/711fc95f14.js"></script>
 		<script type="text/javascript" async
 	  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_CHTML"></script>
@@ -32,8 +32,8 @@
 			<main>
 				<article>
 					<h2>MathML</h2>
-					<p>MathML er et markup language for matematikk. Ved å bruke MathML blir de matematiske formelene skrevet på en strukturert måte, og maskinen vil kunne lese formelen. Det er en måte å visualisere mattestykker i stedet for å legge inn et bilde. Det finnes to typer MathML som er content og presentation. Content er hvordan den matematiske formelen er bygd opp, og hvordan man leser den. Spesielt nyttig hvis man ønsker at maskinen skal lese opp formelen. Presentation er hvordan formelen skal vises.</p>
-					<p>HTML har ingen tagger for å markere matematiske formler, men med MathML vil man kunne vise formler i HTMLkoden i stedet for å legge inn et bilde av formelen. MathML har en del XML tagger som brukes til å markere formelen. Det er ikke alle nettlesere som støtter MathML, Firefox støtter men det gjør ikke Chrome. Så for å få det til å fungere i Chrome så kan man bruke noe som heter MathJax, og ha en script-tag i head. Videre finnes noen enkle eksempler jeg har laget selv for å vise hvordan man bruker MathML.
+					<p>MathML er et markup language for matematikk. Ved å bruke MathML blir de matematiske formelene skrevet på en strukturert måte, og maskinen vil kunne lese formelen. Det er en måte å visualisere mattestykker i stedet for å legge inn et bilde. Det finnes to typer MathML: content og presentation. Content er hvordan den matematiske formelen er bygd opp, og hvordan man leser den. Spesielt nyttig hvis man ønsker at maskinen skal lese opp formelen. Presentation er hvordan formelen skal vises.</p>
+					<p>HTML har ingen tagger for å markere matematiske formler, men med MathML vil man kunne vise formler i HTMLkoden i stedet for å legge inn et bilde av formelen. MathML har en del XML tagger som brukes til å markere formelen. Det er ikke alle nettlesere som støtter MathML, Firefox støtter men det gjør ikke Chrome. For å få det til å fungere i Chrome så kan man bruke noe som heter MathJax, og ha en script-tag i head. Nedenfor har jeg laget noen enkle eksempler for å vise hvordan man bruker MathML.
 					<h3>Eksempel 1</h3>
 					<p> 
 					<math>
@@ -59,7 +59,7 @@
 							&lt;/mrow&gt;<br/>
 						&lt;/math&gt;<br/>
 					</p>
-					<p>Man må alltid ha med &lt;math&gt; som er rotelementet, og ved å bruke &lt;/msup&gt; rundt x og 2 vil 2 opphøyd.</p>
+					<p>Man må alltid ha med &lt;math&gt; som er rotelementet, og ved å bruke &lt;/msup&gt; rundt x og 2 vil 2 bli opphøyd.</p>
 					<br />
 					<h3>Eksempel 2</h3>
 					<p>
